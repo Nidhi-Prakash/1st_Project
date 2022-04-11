@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogging website</title>
+    <style>
+        .first {
+            border: 2px solid black;
+            background-color: black;
+            padding: 10px 80px;
+        }
+
+        .search {
+            background: black;
+            text-align: left;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: large;
+            outline: none;
+            box-shadow: none;
+            border: none;
+            color: white;
+        }
+
+        ::placeholder {
+            color: white;
+            font-style: italic;
+        }
+
+        /* .first:hover{
+               text-decoration: underline white;
+          } */
+
+        .social {
+            background-color: black;
+            position: absolute;
+            top: 18px;
+            right: 120px;
+
+
+        }
+
+        .fb {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            object-position: 50% 50%;
+            background-color: black;
+            border: none;
+        }
+
+        .insta {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            object-position: 50% 50%;
+            background-color: black;
+            border: none;
+        }
+
+        .twit {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            object-position: 50% 50%;
+            background-color: black;
+            border: none;
+        }
+
+        .pint {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            object-position: 50% 50%;
+            background-color: black;
+            border: none;
+        }
+
+        .sec {
+            font-style: normal normal normal 26px/1.4em playfairdisplay-bold, 'playfair display', serif;
+            position: absolute;
+            left: 90px;
+            top: 59px;
+
+        }
+
+        /* .navbar {
+            position: absolute;
+            
+        } */
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 15px -10px;
+            position: relative;
+            left: 945px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li a {
+            padding: 1px 26px;
+            margin: 5px;
+            text-decoration: none;
+            font-size: larger;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* header{
+            position: fixed;
+            width: 100%;
+
+        } */
+
+        .image {
+            width: 492px;
+            height: 640px;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+
+        .thir {
+            border: 2px solid white;
+            font: inherit;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bold;
+            background-color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+
+        }
+
+        .fspan {
+            position: absolute;
+            left: 519px;
+            right: 530px;
+            top: 99%;
+            margin: 5px 5px;
+            padding: 5px 5px;
+            object-position: 50% 50%;
+
+        }
+
+        .navbar li a:hover {
+            color: rgb(187, 90, 58);
+        }
+
+        /* .header {
+            z-index: 100;
+            position: sticky;
+            top: 0;
+        } */
+
+        .four {
+            /* border: 2px solid gray;         */
+            padding-top: 5px;
+            padding-bottom: 5px;
+            /* padding-right: 56px; */
+            margin-top: 217px;
+            margin-bottom: 5px;
+            margin-left: 100px;
+            margin-right: 750px;
+            /* background-color: rgb(252,222,217); */
+        }
+
+        .imag {
+            width: 609px;
+            height: 562px;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+
+        .heading {
+            padding-left: 130px;
+
+        }
+
+        .para {
+            /* color: blueviolet; */
+            padding-left: 44px;
+            padding-right: 73px;
+            text-align: center;
+            font-size: medium;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .five {
+            /* border: 2px solid gray; */
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 225px;
+            margin-bottom: 5px;
+            margin-left: 100px;
+            margin-right: 750px;
+            position: absolute;
+            top: 205mm;
+            left: 190mm;
+            right: -185mm;
+            /* background-color: rgb(252,222,217); */
+
+        }
+
+        .imag1 {
+            height: 200%;
+            width: 96%;
+        }
+
+        .heading1 {
+            padding-left: 100px;
+        }
+
+        .para1 {
+            padding-left: 100px;
+            padding-right: 107px;
+            text-align: center;
+            font-size: medium;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .six {
+            /* border: 2px solid black; */
+            margin-top: 5cm;
+            padding-bottom: 550px;
+            background-color: rgb(252,222,217);
+        }
+
+        .heading2 {
+            padding-left: 505px;
+            margin-bottom: 145px;
+            position: absolute;
+            top: 780mm;
+
+        }
+
+        .hst {
+            position: absolute;
+            left: 120mm;
+            top: 83cm;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: rgb(252,222,217);
+            
+
+        }
+
+        .hnd {
+            position: absolute;
+            left: 250mm;
+            top: 83cm;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: rgb(252,222,217);
+            
+        }
+
+        .hrd {
+            position: absolute;
+            top: 86cm;
+            left: 120mm;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: rgb(252,222,217);
+        }
+
+        .hth {
+            position: absolute;
+            top: 86cm;
+            left: 250mm;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: rgb(252,222,217);
+            display: block;
+            height: 15px;
+            width: 166px;
+        }
+
+        .ha {
+            position: absolute;
+            top: 82cm;
+            left: 121mm;
+            font-size: large;
+            font-weight: bold;
+
+        }
+
+        .he {
+            position: absolute;
+            top: 82cm;
+            left: 250mm;
+            font-size: large;
+            font-weight: bold;
+
+        }
+
+        .hi {
+            position: absolute;
+            top: 85cm;
+            left: 121mm;
+            font-size: large;
+            font-weight: bold;
+
+        }
+
+        .ho {
+            position: absolute;
+            top: 85cm;
+            left: 250mm;
+            font-size: large;
+            font-weight: bold;
+
+        }
+
+        .sub {
+            position: absolute;
+            top: 89cm;
+            left: 185mm;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: rgb(187,90,58);
+            border: none;
+            font-size: large;
+            color: white;
+            font-weight: 600;
+        }
+
+        .seven{
+            /* border: 2px solid black; */
+            /* border: 2px solid gray;         */
+            padding-top: 5px;
+            padding-bottom: 5px;
+            /* padding-right: 56px; */
+            margin-top: 217px;
+            margin-bottom: 5px;
+            margin-left: 100px;
+            margin-right: 750px;
+            /* background-color: rgb(252,222,217); */
+        }
+
+        .imag3{
+            width: 609px;
+            height: 562px;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+
+        .heading3{
+            padding-left: 130px;
+        }
+
+        .para3{
+            padding-left: 44px;
+            padding-right: 73px;
+            text-align: center;
+            font-size: medium;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .footer{
+            border: 2px solid rgb(187,90,58);
+            background-color: rgb(187,90,58);
+        }
+
+        .para4{
+            text-align: center;
+        }
+
+        .span1{
+            text-align: center;
+
+        }
+
+        .imag5{
+            position: absolute;
+            left: 245mm;
+            top: 486mm;
+            /* right: 10px; */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="first">
+            <form action="#">
+                <input type="Search" class="search" placeholder="Search....">
+            </form>
+
+            <div class="social">
+                <input type="button" class="fb"><a href="#"><img src="/facrbook icon.webp" alt="Facebook"></a></input>
+                <input type="button" class="insta"><a href="#"><img src="/insta icon.webp" alt="Instagram"></a></input>
+                <input type="button" class="twit"><a href="#"><img src="/twitter icon.webp" alt="Twitter"></a></input>
+                <input type="button" class="pint"><a href="#"><img src="/pinterest icon.webp"
+                        alt="Pinterest"></a></input>
+            </div>
+
+        </div>
+
+        <div>
+            <h2 class="sec">Turning Heads</h2>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <div>
+        <img class="image" src="/fp1.webp" alt="">
+        <img class="image" src="/fp2.webp" alt="">
+        <img class="image" src="/fp3.webp" alt="">
+    </div>
+
+    <span class="fspan">
+        <h1 class="thir">My Life. My Blog</h1>
+    </span>
+
+    <div class="four">
+        <img class="imag" src="/img4.jpg" alt="">
+        <h2 class="heading">Art : A Passion or a Hobby</h2>
+        <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia ullam, optio dolorum eligendi
+            doloremque voluptates voluptatum quae. Voluptate animi provident aliquam, aliquid nam minus iste nulla, sint
+            optio perspiciatis dolore magni molestias? Hic, doloremque. Itaque debitis sit modi quasi? Repellat tempora
+            molestiae molestias deserunt dignissimos corrupti delectus rem itaque repudiandae?</p>
+    </div>
+
+    <div class="five">
+        <img class="imag1" src="/img5.gif" alt="">
+        <h2 class="heading1">Friendship is love or Love is friendship</h2>
+        <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur corrupti eius laborum? Non
+            adipisci architecto sit molestiae dignissimos in quae, maiores inventore esse mollitia ab hic consequuntur?
+            Similique blanditiis explicabo ab unde harum quos inventore quo iure. Autem voluptate sapiente at
+            consequatur totam, aliquid neque earum quia doloremque! Repellendus, quisquam!</p>
+
+    </div>
+    
+        
+    <div class="seven">
+        <img class="imag3" src="/img6.jpg" alt="">
+        <img class="imag5" src="/img8.png" alt="">
+        <h2 class="heading3">Personality : Reflection of the Soul</h2>
+        <p class="para3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi excepturi est voluptatibus provident ipsum error iure ex earum. Illo repellat reprehenderit quis, at quaerat rerum, magni tenetur ea quod asperiores fugit nisi ipsa esse culpa velit architecto molestiae corporis tempora in sit vitae. Totam tempora iusto eveniet! Eligendi, tempore culpa.</p>
+
+    </div>
+
+    <!-- <div class="eight">
+        <img class="imag5" src="/img7.png" alt="">
+    </div> -->
+
+    <div class="six">
+        <h1 class="heading2">Let me know what's on your mind</h1>
+        <form action="#">
+            <label class="ha">First name:</label>
+            <input class="hst" type="text">
+            <label class="he">Last name:</label>
+            <input class="hnd" type="text">
+            <label class="hi">Email Id:</label>
+            <input class="hrd" type="text">
+            <label class="ho">Leave us a message</label>
+            <textarea name="textarea" class="hth" id="" cols="30" rows="10"></textarea>
+            <!-- <input class="hth" type="textarea"><br> -->
+            <input class="sub" type="submit">
+        </form>
+    </div>
+
+    <div class="footer">
+        <p class="para4">
+            <span class="span1">
+                Copyrights © 2022. All Rights Reserved.
+            </span>
+        </p>
+
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
